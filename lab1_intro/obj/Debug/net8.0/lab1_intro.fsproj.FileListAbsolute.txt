@@ -57,3 +57,4 @@ C:\Labs\filp-labs\lab1_intro\obj\Debug\net8.0\refint\lab1_intro.dll
 C:\Labs\filp-labs\lab1_intro\obj\Debug\net8.0\lab1_intro.pdb
 C:\Labs\filp-labs\lab1_intro\obj\Debug\net8.0\lab1_intro.genruntimeconfig.cache
 C:\Labs\filp-labs\lab1_intro\obj\Debug\net8.0\ref\lab1_intro.dll
+C:\Users\admin\Desktop\Lab\filp-labs\lab1_intro\obj\Debug\net8.0\lab1_intro.sourcelink.json

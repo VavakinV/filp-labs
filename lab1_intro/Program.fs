@@ -45,8 +45,43 @@ System.Console.WriteLine(digit_sum_or_fact false 10)
 System.Console.Write("Сумма цифр 10: ")
 System.Console.WriteLine(digit_sum_or_fact true 10)
 
-// Задание 7
-let inc_ a b = a+1 in
-System.Console.WriteLine(obhod_chisla 135 inc_ 0)
-let sum_ a b = a+b in
+// Задание 7, 8
+System.Console.WriteLine("Обход числа 135:")
+
+System.Console.Write("Количество цифр: ")
+let count_ a b = a+1
+System.Console.WriteLine(obhod_chisla 135 count_ 0)
+
+System.Console.Write("Сумма цифр: ")
+let sum_ a b = a+b
 System.Console.WriteLine(obhod_chisla 135 sum_ 0)
+
+System.Console.Write("Минимальная цифра: ")
+let minDigit a b =
+    match (a, b) with
+    | (a, b) when a <= b -> a
+    | _ -> b
+System.Console.WriteLine(obhod_chisla 135 minDigit 9)
+
+System.Console.Write("Максимальная цифра: ")
+let maxDigit a b =
+    match (a, b) with
+    | (a, b) when a >= b -> a
+    | _ -> b
+System.Console.WriteLine(obhod_chisla 135 maxDigit 0)
+
+// Задание 9, 10
+System.Console.WriteLine("Обход числа 546372 с условием:")
+let greaterThan3 n = n > 3
+let isEven n = n % 2 = 0
+let smallerThan4 n = n < 4
+
+System.Console.Write("Количество цифр >3: ")
+System.Console.WriteLine(obhod_chisla_condition 546372 count_ 0 greaterThan3)
+
+System.Console.Write("Сумма чётных цифр: ")
+System.Console.WriteLine(obhod_chisla_condition 546372 sum_ 0 isEven)
+
+System.Console.Write("Максимальная цифра <4: ")
+System.Console.WriteLine(obhod_chisla_condition 546372 maxDigit 0 smallerThan4)
+

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "deg+RAn6sf8=",
+  "dgSpecHash": "Ms24/eYlfAx7cxI3lxm3VOr8GOucDJ5v85nWF1aE/qBMWB+83Ix2j7DeSMOsWWWgPXbCHAv0UWr7dr72D7YeUg==",
   "success": true,
-  "projectFilePath": "C:\\Labs\\filp-labs\\lab1_intro\\lab1_intro.fsproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Lab\\filp-labs\\lab1_intro\\lab1_intro.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Asus\\.nuget\\packages\\fsharp.core\\9.0.201\\fsharp.core.9.0.201.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\fsharp.core\\8.0.100\\fsharp.core.8.0.100.nupkg.sha512"
   ],
   "logs": []
 }
