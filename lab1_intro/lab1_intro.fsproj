@@ -12,6 +12,7 @@
     <Compile Include="Fibonacci.fs" />
     <Compile Include="LogicArg.fs" />
     <Compile Include="ObhodChisla.fs" />
+    <Compile Include="FavoriteLanguage.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

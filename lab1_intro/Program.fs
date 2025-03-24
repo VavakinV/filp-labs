@@ -4,6 +4,7 @@ open DigitSum
 open Fibonacci
 open LogicArg
 open ObhodChisla
+open FavoriteLanguage
 
 [<EntryPoint>]
 // Задание 1
@@ -85,3 +86,17 @@ System.Console.WriteLine(obhod_chisla_condition 546372 sum_ 0 isEven)
 System.Console.Write("Максимальная цифра <4: ")
 System.Console.WriteLine(obhod_chisla_condition 546372 maxDigit 0 smallerThan4)
 
+// Задание 11, 12
+
+// Суперпозиция
+let languageMainSup = (fun () -> System.Console.ReadLine()) >> respondToFavoriteLanguage >> System.Console.WriteLine
+System.Console.WriteLine("Какой твой любимый язык программирования?")
+languageMainSup ()
+
+// Каррирование
+let languageMainCar input output = 
+    output (respondToFavoriteLanguage input)
+
+System.Console.WriteLine("Какой твой любимый язык программирования?")
+let getInput = languageMainCar (System.Console.ReadLine())
+getInput System.Console.WriteLine
