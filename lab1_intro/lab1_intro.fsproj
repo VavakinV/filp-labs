@@ -14,6 +14,8 @@
     <Compile Include="ObhodChisla.fs" />
     <Compile Include="FavoriteLanguage.fs" />
     <Compile Include="ProcessingNumbers.fs" />
+    <Compile Include="ProcessingNumbersUI.fs" />
+    <Compile Include="Tests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
