@@ -100,3 +100,16 @@ let languageMainCar input output =
 System.Console.WriteLine("Какой твой любимый язык программирования?")
 let getInput = languageMainCar (System.Console.ReadLine())
 getInput System.Console.WriteLine
+
+// Задание 13
+System.Console.Write("Обход взаимно простых компонентов 10 (сумма): ")
+System.Console.WriteLine(obhod_chisla_coprime 10 (+) 0)
+
+// Задание 14
+System.Console.Write("Функция Эйлера для 20: ")
+System.Console.WriteLine(euler_func 20)
+
+// Задание 15
+System.Console.Write("Обход взаимно простых компонентов 10, меньших 5 (сумма): ")
+let lessThan5 n = n < 5
+System.Console.WriteLine(obhod_chisla_coprime_condition 10 (+) 0 lessThan5)
