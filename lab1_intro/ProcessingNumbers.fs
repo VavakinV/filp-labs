@@ -33,3 +33,12 @@ let not_divis_by_5 n = n%5 <> 0
 
 let mult_digit_not_divis_by5 n =
     obhod_chisla_condition n mult_two 1 not_divis_by_5
+
+let odd_notprime n = not (is_prime n) && n % 2 = 1 
+let max_notprime_odd_divisor n = max_divisor_condition n odd_notprime
+
+let mult_digits n = obhod_chisla n mult_two 1
+
+let gcd_max_notprime_odd_divisor_and_mult_digits n =
+    gcd (max_notprime_odd_divisor n) (mult_digits n)
+
