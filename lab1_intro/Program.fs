@@ -103,7 +103,7 @@ let getInput = languageMainCar (System.Console.ReadLine())
 getInput System.Console.WriteLine
 
 // Задание 13
-System.Console.Write("Обход взаимно простых компонентов 10 (сумма): ")
+System.Console.Write("Обход взаимно простых компонентов 10 (сумма):")
 System.Console.WriteLine(obhod_chisla_coprime 10 (+) 0)
 
 // Задание 14
@@ -111,13 +111,15 @@ System.Console.Write("Функция Эйлера для 20: ")
 System.Console.WriteLine(euler_func 20)
 
 // Задание 15
-System.Console.Write("Обход взаимно простых компонентов 10, меньших 5 (сумма): ")
+System.Console.Write("Обход взаимно простых компонентов 10, меньших 5 (сумма):")
 let lessThan5 n = n < 5
 System.Console.WriteLine(obhod_chisla_coprime_condition 10 (+) 0 lessThan5)
 
-// Задание 16
+// Задания 16-19
 // метод 1
 System.Console.Write("Максимальный простой делитель 20: ")
 System.Console.WriteLine(max_prime_divisor 20)
 // метод 2
+System.Console.Write("Произведение цифр числа, не делящихся на 5 (2554):")
+System.Console.WriteLine(mult_digit_not_divis_by5 2554)
 // метод 3

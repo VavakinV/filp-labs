@@ -26,3 +26,10 @@ let max_divisor_condition number (condition :int->bool) =
 
 let max_prime_divisor number =
     max_divisor_condition number (fun x -> is_prime x)
+
+let mult_two a b = a*b
+
+let not_divis_by_5 n = n%5 <> 0
+
+let mult_digit_not_divis_by5 n =
+    obhod_chisla_condition n mult_two 1 not_divis_by_5
