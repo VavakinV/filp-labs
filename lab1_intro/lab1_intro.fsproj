@@ -13,6 +13,7 @@
     <Compile Include="LogicArg.fs" />
     <Compile Include="ObhodChisla.fs" />
     <Compile Include="FavoriteLanguage.fs" />
+    <Compile Include="ProcessingNumbers.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

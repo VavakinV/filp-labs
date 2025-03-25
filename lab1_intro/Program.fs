@@ -5,6 +5,7 @@ open Fibonacci
 open LogicArg
 open ObhodChisla
 open FavoriteLanguage
+open ProcessingNumbers
 
 [<EntryPoint>]
 // Задание 1
@@ -113,3 +114,10 @@ System.Console.WriteLine(euler_func 20)
 System.Console.Write("Обход взаимно простых компонентов 10, меньших 5 (сумма): ")
 let lessThan5 n = n < 5
 System.Console.WriteLine(obhod_chisla_coprime_condition 10 (+) 0 lessThan5)
+
+// Задание 16
+// метод 1
+System.Console.Write("Максимальный простой делитель 20: ")
+System.Console.WriteLine(max_prime_divisor 20)
+// метод 2
+// метод 3
