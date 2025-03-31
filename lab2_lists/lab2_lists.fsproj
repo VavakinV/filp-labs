@@ -2,13 +2,16 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="ReadList.fs" />
     <Compile Include="WriteList.fs" />
     <Compile Include="ReduceList.fs" />
+    <Compile Include="BinaryTree.fs" />
+    <Compile Include="ListProcessing.fs" />
+    <Compile Include="Tasks11to16.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
