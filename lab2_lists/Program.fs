@@ -6,6 +6,10 @@ open ReduceList
 open BinaryTree
 open ListProcessing
 open Tasks11to16
+open GenerateABTuple
+open CombineLists
+open ShuffleWords
+open SortStringsASCII
 
 [<EntryPoint>]
 let main argv = 
@@ -76,4 +80,19 @@ let main argv =
     print_list (filter_between_avg_and_max_church arr)
     Console.Write("List: ")
     print_list (filter_between_avg_and_max_list arr)
+    Console.Write("Введите число: ")
+    let N = Console.ReadLine() |> int
+    Console.WriteLine("Построенные кортежи (a,b): ")
+    print_list (generate_ab_tuples N)
+    Console.WriteLine("Объединение списков [1, 2, 3] и [4, 5, 6]:")
+    let ar1 = [1; 2; 3]
+    let ar2 = [4; 5; 6]
+    print_list (combine_lists ar1 ar2)
+    Console.WriteLine("Перемешивание строки 'apple banana orange grape mango':")
+    Console.WriteLine(shuffle_words "apple banana orange grape mango")
+    Console.WriteLine("Сортировка по квадратичному отклонению среднего веса ASCII-кода символа строки от следнего веса первой строки:")
+    Console.WriteLine("Исходный массив: ['abc', 'a', 'aaaaa', 'uyo', 'tel', 'lorem']")
+    Console.Write("Отсортированный массив: ")
+    print_list (sort_by_ASCII_deviation ["abc"; "a"; "aaaaa"; "uyo"; "tel"; "lorem"])
     0
+ 

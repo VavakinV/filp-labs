@@ -12,6 +12,10 @@
     <Compile Include="BinaryTree.fs" />
     <Compile Include="ListProcessing.fs" />
     <Compile Include="Tasks11to16.fs" />
+    <Compile Include="GenerateABTuple.fs" />
+    <Compile Include="CombineLists.fs" />
+    <Compile Include="ShuffleWords.fs" />
+    <Compile Include="SortStringsASCII.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
