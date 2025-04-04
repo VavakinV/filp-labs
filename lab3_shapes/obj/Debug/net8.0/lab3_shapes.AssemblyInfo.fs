@@ -7,11 +7,11 @@ open System
 open System.Reflection
 
 
-[<assembly: System.Reflection.AssemblyCompanyAttribute("lab2_lists")>]
+[<assembly: System.Reflection.AssemblyCompanyAttribute("lab3_shapes")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")>]
-[<assembly: System.Reflection.AssemblyProductAttribute("lab2_lists")>]
-[<assembly: System.Reflection.AssemblyTitleAttribute("lab2_lists")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2efca82bdff3b06fa00df884e00a698e153b05dd")>]
+[<assembly: System.Reflection.AssemblyProductAttribute("lab3_shapes")>]
+[<assembly: System.Reflection.AssemblyTitleAttribute("lab3_shapes")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
 do()

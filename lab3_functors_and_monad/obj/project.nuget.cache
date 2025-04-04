@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZK5G/h57xSWTyA2lGyJ6N3nqZHIHrU7DxPeYUqAGSGiWeCBclIEm4MczVBWIEw+6e4qEMbFdb19BmcPTesiKog==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Lab\\filp-labs\\lab3_functors_and_monad\\lab3_functors_and_monad.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\fsharp.core\\8.0.100\\fsharp.core.8.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}
