@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RYKDqmevEwI9OOtpc8t6qQS7mKLixGn84/dDSm7IoALIR3EWUD8XgxIxmljtU7eJTXJRt+LfaBHxVyS9E8w0ag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Lab\\filp-labs\\lab3_documentclass\\lab3_documentclass.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\fsharp.core\\8.0.100\\fsharp.core.8.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "EIkE4re8LqO7cEQGPIvUmkdoxPgIrOP4Mo4pP8e2HtDI+os0b+NA+Wn8MbXsWRXXAEz3pk7+3sV4ozi09RSDqw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Lab\\filp-labs\\lab3_fparsec\\lab3_fparsec.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\fparsec\\1.1.1\\fparsec.1.1.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\fsharp.core\\8.0.100\\fsharp.core.8.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}

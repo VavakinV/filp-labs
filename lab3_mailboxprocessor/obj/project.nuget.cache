@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tR9cyjyIx7oSWe75flBqTC7YmDXc8ru3vlys6tLaCMzQnGveC3/B9sGJVTNjEAeYNZLmQT7fPuSjMe/Kp3O0xw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Lab\\filp-labs\\lab3_mailboxprocessor\\lab3_mailboxprocessor.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\fsharp.core\\8.0.100\\fsharp.core.8.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}
