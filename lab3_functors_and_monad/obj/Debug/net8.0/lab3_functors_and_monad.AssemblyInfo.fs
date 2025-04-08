@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("lab3_functors_and_monad")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fbe12d28da7ea2e061b786e23308f940b6aec68")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("lab3_functors_and_monad")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("lab3_functors_and_monad")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
