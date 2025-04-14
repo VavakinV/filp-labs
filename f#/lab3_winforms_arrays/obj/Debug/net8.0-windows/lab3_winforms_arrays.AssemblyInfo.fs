@@ -7,12 +7,12 @@ open System
 open System.Reflection
 
 
-[<assembly: System.Reflection.AssemblyCompanyAttribute("lab3_wpf")>]
+[<assembly: System.Reflection.AssemblyCompanyAttribute("lab3_winforms_arrays")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dad55dd09774c50967e180a86a39ad37e337eff")>]
-[<assembly: System.Reflection.AssemblyProductAttribute("lab3_wpf")>]
-[<assembly: System.Reflection.AssemblyTitleAttribute("lab3_wpf")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")>]
+[<assembly: System.Reflection.AssemblyProductAttribute("lab3_winforms_arrays")>]
+[<assembly: System.Reflection.AssemblyTitleAttribute("lab3_winforms_arrays")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
 [<assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")>]
 [<assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")>]
