@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vQCUTlhH4VMNzDkpoAsTQ4zeV4ZBxoaQSIbtDgy7E0bEFwPGUr8AJ76qu4n8xr4j48fC7q2BOg0tXu6XJovysw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Lab\\filp-labs\\f#\\IZ1\\IZ1.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\fsharp.core\\8.0.100\\fsharp.core.8.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}
