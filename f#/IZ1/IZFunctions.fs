@@ -23,7 +23,6 @@ let five_digits_of_fact n =
         match n > limit with
         | true -> acc % modulo
         | false ->
-            let current = n
             let newN, newAcc = remove_tens n acc
             let updatedAcc = (newAcc * (newN % modulo)) % global_limit
             let nextN = n + 1I
