@@ -4,18 +4,21 @@ let modulo = 100000I
 let global_limit = 1000000000000I
 
 let rec shrink_number n =
-    if n % modulo = 0I then
+    match n % modulo = 0I with
+    | false -> n
+    | true ->
         let newN = n / 5I
         shrink_number newN
-    else n
 
-let rec remove_tens n result =
-    match n % 5I = 0I with
-    | false -> n, result
-    | true -> 
-        let newResult = result / 2I
-        let newN = n / 5I
-        remove_tens newN newResult
+let remove_tens n result =
+    let rec loop n result =
+        match n % 5I = 0I with
+        | false -> n, result
+        | true -> 
+            let newResult = result / 2I
+            let newN = n / 5I
+            loop newN newResult
+    loop n result
 
 let five_digits_of_fact n =
     let n = shrink_number n
