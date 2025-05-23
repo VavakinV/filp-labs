@@ -247,34 +247,49 @@ b_a_rp(A,N,Perm):-in_list(A,El),N1 is N-1,b_a_rp(A,N1,[El|Perm]).
 
 %razm_povt(+Alphabet,+N,+RazmCur,-Razm)
 razm_povt(_,0,Razm,Razm):-!.
-razm_povt(Alphabet,NCur,RazmCur,Razm):-in_list(Alphabet,El),NNew is NCur-1,razm_povt(Alphabet,NNew,[El|RazmCur],Razm).
-
-
+razm_povt(Alphabet,NCur,RazmCur,Razm):-
+	in_list(Alphabet,El),
+	NNew is NCur-1,
+	razm_povt(Alphabet,NNew,[El|RazmCur],Razm).
 
 in_list([El|_],El).
 in_list([_|T],El):-in_list(T,El).
 
 
 sochet([],_,0):-!.
-sochet([H|Sub_set],[H|Set],K):-K1 is K-1, sochet(Sub_set,Set,K1).
-sochet(Sub_set,[H|Set],K):-sochet(Sub_set,Set,K).
+sochet([H|Sub_set],[H|Set],K):-
+	K1 is K-1, 
+	sochet(Sub_set,Set,K1).
+sochet(Sub_set,[H|Set],K):-
+	sochet(Sub_set,Set,K).
 
 make_pos_list(K, K, []):-!.
-make_pos_list(K, CurPos, [NewPos|TailPos]) :- NewPos is CurPos + 1, make_pos_list(K, NewPos, TailPos).
+make_pos_list(K, CurPos, [NewPos|TailPos]) :- 
+	NewPos is CurPos + 1, 
+	make_pos_list(K, NewPos, TailPos).
 
 make_3a_empty_word(K, K, _, []):-!.
 make_3a_empty_word(K, CurIndex, [NewIndex|PosTail], [a|Tail]) :- 
-	NewIndex is CurIndex + 1, make_3a_empty_word(K, NewIndex, PosTail, Tail),!.
+	NewIndex is CurIndex + 1, 
+	make_3a_empty_word(K, NewIndex, PosTail, Tail),
+	!.
 make_3a_empty_word(K, CurIndex, PosList, [_|Tail]) :- 
-	NewIndex is CurIndex + 1, make_3a_empty_word(K, NewIndex, PosList, Tail).	
+	NewIndex is CurIndex + 1, 
+	make_3a_empty_word(K, NewIndex, PosList, Tail).	
 
 build_word([],[],_):-!.
 build_word([a|WordTail],[X|WordEmpty3aTail],RestWord) :- 
-	nonvar(X),build_word(WordTail,WordEmpty3aTail,RestWord),!.
+	nonvar(X),build_word(WordTail,WordEmpty3aTail,RestWord),
+	!.
 build_word([Y|WordTail],[X|WordEmpty3aTail],[Y|RestWordTail]) :- 
-	var(X),build_word(WordTail,WordEmpty3aTail,RestWordTail).
+	var(X),
+	build_word(WordTail,WordEmpty3aTail,RestWordTail).
 
 build_3a_words_of_k(Alphabet,K,Word) :- make_pos_list(K, 0, PosList), 
-	sochet(Pos_a_List, PosList, 3), make_3a_empty_word(K, 0, Pos_a_List, WordEmpty3a), Alphabet = [a|NewAlphabet], 
-	M is K - 3, razm_povt(NewAlphabet, M, [], RestWord), build_word(Word, WordEmpty3a, RestWord).
+	sochet(Pos_a_List, PosList, 3), 
+	make_3a_empty_word(K, 0, Pos_a_List, WordEmpty3a), 
+	Alphabet = [a|NewAlphabet], 
+	M is K - 3, 
+	razm_povt(NewAlphabet, M, [], RestWord), 
+	build_word(Word, WordEmpty3a, RestWord).
 
