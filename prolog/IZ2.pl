@@ -16,8 +16,7 @@ remove_list([H|T], R, [H|Res]) :-
     remove_list(T, R, Res).
 
 make_pos_list(K, K, []) :- !.
-make_pos_list(K, Cur, [P|Ps]) :-
-    P is Cur + 1,
+make_pos_list(K, Cur, [Next|Ps]) :-
     Next is Cur + 1,
     make_pos_list(K, Next, Ps).
 
